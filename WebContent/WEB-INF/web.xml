@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<context-param>
+		<param-name>foo</param-name>
+		<param-value>bar</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>Princess</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>breed</param-name>
+		<param-value>Spitz</param-value>
+	</context-param>
+
+	<display-name>
+	Beer-v1</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		Chapter 1 Servlet</display-name>
+		<servlet-name>Chapter 1 Servlet</servlet-name>
+		<servlet-class>ch1.Ch1Servlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		BeerSelect</display-name>
+		<servlet-name>Ch3 Beer</servlet-name>
+		<servlet-class>ch3.BeerSelect</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		TestInitParams</display-name>
+		<servlet-name>TestInitParams</servlet-name>
+		<servlet-class>
+		ch5.TestInitParams</servlet-class>
+		<init-param>
+			<param-name>adminEmail </param-name>
+			<param-value>likewecare@wickedlysmart.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mainEmail </param-name>
+			<param-value>blooper@wickedlysmart.com</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		ListenerTester</display-name>
+		<servlet-name>ListenerTester</servlet-name>
+		<servlet-class>
+		ch5.ListenerTester</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		TestSession</display-name>
+		<servlet-name>TestSession</servlet-name>
+		<servlet-class>
+		ch6.TestSession</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		TestCookie</display-name>
+		<servlet-name>TestCookie</servlet-name>
+		<servlet-class>
+		ch6.TestCookie</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		CheckCookie</display-name>
+		<servlet-name>CheckCookie</servlet-name>
+		<servlet-class>
+		ch6.CheckCookie</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		TestScriptless</display-name>
+		<servlet-name>TestScriptless</servlet-name>
+		<servlet-class>
+		ch8.TestScriptless</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		TestEL</display-name>
+		<servlet-name>TestEL</servlet-name>
+		<servlet-class>
+		ch8.TestEL</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Chapter 1 Servlet</servlet-name>
+		<url-pattern>/Serv1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Ch3 Beer</servlet-name>
+		<url-pattern>/SelectBeer.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestInitParams</servlet-name>
+		<url-pattern>/Tester.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ListenerTester</servlet-name>
+		<url-pattern>/ListenerTester</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestSession</servlet-name>
+		<url-pattern>/TestSession</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestCookie</servlet-name>
+		<url-pattern>/TestCookie</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CheckCookie</servlet-name>
+		<url-pattern>/CheckCookie</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestScriptless</servlet-name>
+		<url-pattern>/TestScriptless</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TestEL</servlet-name>
+		<url-pattern>/TestEL</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>
+			ch5.MyServletContextListener
+		</listener-class>
+	</listener>
+</web-app>

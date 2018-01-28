@@ -1,0 +1,13 @@
+<taglib xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd" xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+
+    <description>Security-related utilities</description>
+    <tlib-version>2.0_rc10</tlib-version>
+	<uri> simpleBodyTags </uri>
+	<tag>
+		<description>marginally a better use of a custom tag </description>
+		<name> simplebody </name>
+		<tag-class> ch10.SimpleTagBody </tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>

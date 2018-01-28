@@ -1,0 +1,31 @@
+<taglib
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"
+        xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        version="2.1">
+
+    <description>Security-related utilities</description>
+    <tlib-version>2.0_rc10</tlib-version>
+    <uri>DiceFunctions</uri>
+    <function>
+        <name>rollIt</name>
+        <function-class>ch8.DiceRoller
+        </function-class>
+        <function-signature>int rollDice()</function-signature>
+    </function>
+
+
+	<uri> randomThings </uri>
+	<tag>
+		<description> random advice </description>
+		<name> advice </name>
+		<tag-class> ch9.AdvisorTagHandler </tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+			<name>user </name>
+			<required>true</required>
+			<rtexprvalue>true </rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
+
